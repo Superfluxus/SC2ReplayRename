@@ -1,4 +1,5 @@
-$logging = $false
+$logging = $true
+Set-Location $PSScriptRoot
 $files = gci -recurse
 $replays = $files | Where Attributes -eq "Normal"
 foreach ($i in $replays) {
